@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1352px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.first-section {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 1px -1px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100vw;
+}
+
+.first-section>p {
+    font-size: 37px;
+    font-family: 'Raleway', sans-serif;
+    font: weight 300;
+    color: #08A6E4;
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation li {
+    display: inline;
+    padding: 17px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #A5A5A5;
+}
+
+.navigation a:hover {
+    color: black;
+}
+
+.navigation li:first-of-type:hover::after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 12px;
+}
+
+.navigation li:nth-of-type(2):hover::after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.navigation li:nth-of-type(3):hover::after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+}
+
+.navigation li:last-of-type:hover::after {
+    content: "";
+    height: 3px;
+    width: 50px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    right: 12px;
+}
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 77px;
+}
+
+.background {
+    background-image: url(../assets/Background.png);
+    height: 60rem;
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+.second-section>h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 40px;
+    font-style: 'Raleway';
+}
+
+.second-section p {
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    padding: 30px;
+}
+
+.banner_btn {
+    height: 70px;
+    width: 440px;
+    background-color: #08A6E4;
+    color: white;
+    border-radius: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.third_section.container {
+    background-color: white;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amounts {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.third_section>h2 {
+    padding: 30px;
+    font-size: 4rem;
+    font-style: 'Raleway'
+}
+
+.third_section h3 {
+    font-style: 'Raleway';
+    font-weight: 900;
+    font-size: 2.4rem;
+    letter-spacing: 0.6rem;
+    padding: 20px;
+}
+
+.third_section p {
+    font-size: 2rem;
+    color: #A5A5A5;
+    padding: 20px;
+}
+
+.amounts.icon1::before {
+    content: " ";
+    width: 6rem;
+    height: 6rem;
+    background-color: #FB3B64;
+    border-radius: 50%;
+    position: absolute;
+    left: 80px;
+}
+
+.icon_first {
+    z-index: 1;
+    padding: 10px;
+}
+
+.amounts.icon2::before {
+    content: " ";
+    width: 6rem;
+    height: 6rem;
+    background-color: #08A6E4;
+    border-radius: 50%;
+    position: absolute;
+    left: 120px;
+}
+
+.icon_second {
+    z-index: 1;
+    padding: 10px;
+}
+
+.amounts.icon3::before {
+    content: " ";
+    width: 6rem;
+    height: 6rem;
+    background-color: #55DFB4;
+    border-radius: 50%;
+    position: absolute;
+    left: 90px;
+}
+
+.icon_third {
+    z-index: 1;
+    padding: 10px;
+}
+
+.fourth_section {
+    background-color: #F7F7F7;
+    width: 100vw;
+}
+
+.combine.container {
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    padding: 80px 40px;
+}
+
+.combine.container h2 {
+    font-size: 3.6rem;
+    padding: 50px 0;
+}
+
+.combine.container p {
+    font-size: 1.6rem;
+    padding: 20px 0;
+    width: 40rem;
+}
+
+.articles_content p::after {
+    content: "";
+    height: 3px;
+    width: 300px;
+    background: #FB3B64;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+
+.articles_content {
+    position: relative;
+}
+
+.article_img {
+    height: 220px;
+    width: 380px;
+    z-index: 10;
+}
+
+.combine.container:nth-of-type(1)::before {
+    content: " ";
+    height: 150px;
+    width: 150px;
+    background-color: #FB3B64;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 0;
+    left: 950px;
+    top: 70px;
+    transform: rotate(135deg);
+}
+
+.articles_content:nth-child(2)::after {
+    content: "";
+    height: 3px;
+    width: 300px;
+    background: #08A6E4;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+
+.combine.container:nth-of-type(2)::before {
+    content: " ";
+    height: 300px;
+    width: 300px;
+    background-color: #08A6E4;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    left: 50px;
+    top: 50px;
+    transform: rotate(135deg);
+}
+
+.combine.container:nth-of-type(2) {
+    position: relative;
+    top: 200px;
+}
+
+.fourth_section article:nth-of-type(3) {
+    position: relative;
+    top: 300px;
+    justify-content: center;
+}
+
+.last_article {
+    width: 65rem;
+    height: 35rem;
+    background-color: white;
+}
+
+.last_article h2 {
+    font-size: 3.6rem;
+    padding: 50px 0;
+}
+
+.last_article p {
+    font-size: 1.6rem;
+    padding: 20px 0;
+    width: 40rem;
+}
+
+.last_article p::after {
+    content: "";
+    height: 3px;
+    width: 300px;
+    background: #55DFB4;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+.trumpet {
+    box-sizing: content-box;
+    margin-left: 80px;
+    width: 65rem;
+    height: 35rem;
+    background-color: #55DFB4;
+}
+
+
+/*jak zrobic te odstepy szare bez przesuwania potem wszystkiego na doł */
