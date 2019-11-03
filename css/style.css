@@ -626,7 +626,7 @@ input[type="checkbox"] {
     transform: translate(-50%, -50%);
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    content: "\f007";
+    content: '\f007';
 }
 
 .personal {
