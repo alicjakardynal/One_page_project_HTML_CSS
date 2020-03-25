@@ -727,10 +727,23 @@ footer img {
     border-radius: 5px;
     border: 1px solid  #07ACE6;
     box-shadow:  -1px 1px 3px rgba(0, 0, 0, 0.4);
-   
-      
     
 }
+.inputs_section select option{
+    font-size:1em;
+    border-color:  red;
+    margin: 10px;
+    
+
+
+}
+.inputs_section select{
+    border: 1px solid red;
+}
+#title-option{
+    color: #A5A5A5;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -757,6 +770,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     top: -13%;
     left: 89%;
+    pointer-events: none;
 }
 
 .calculator label{
@@ -791,7 +805,8 @@ padding: 8px;
 }
 .total{
     background-color: #08A6E4;
-    width: 30%;
+    width: 40%;
+    margin-top: 10px;
    
 }
 .total-space{
