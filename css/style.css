@@ -703,7 +703,7 @@ footer img {
 
 .calculator{
     display: block;
-    padding: 50px;
+    padding: 80px 50px 20px 50px;
 }
 .calculator>h2{
     font-size: 3rem;
@@ -729,6 +729,18 @@ footer img {
     box-shadow:  -1px 1px 3px rgba(0, 0, 0, 0.4);
     
 }
+.inputs_section .accounting{
+    display: none;
+    top: 15px;
+    left: 15px;
+}
+.inputs_section .rental{
+    display: none;
+    top: 15px;
+    left: 15px
+}
+
+
 .inputs_section select option{
     font-size:1em;
     border-color:  red;
@@ -778,6 +790,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .choose_option{
 display: inline-block;
+position: relative;
 }
 
 .summary{
@@ -812,4 +825,12 @@ padding: 8px;
 .total-space{
     display: flex;
     justify-content: flex-end;
+}
+
+.account-space{
+    display: none;
+}
+
+.rental-space{
+    display: none;
 }
