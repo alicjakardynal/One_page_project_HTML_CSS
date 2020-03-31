@@ -71,17 +71,37 @@ document.addEventListener("DOMContentLoaded", function() {
     const ordersNumber = parseInt(ordersSum.innerText);
     const newOrdersSum = 0.25 * ordersInput;
     ordersSum.innerHTML = newOrdersSum;
-
-
   });
-const packageSelect=document.querySelector("#package");
-console.log(packageSelect);
-packageSelect.addEventListener("change",function(){
-  const packageSum = document.querySelector(
-    ".summary-space:nth-of-type(3) .price span"
-  );
-})
-  
-  
 
+
+  const packageSelect = document.querySelector("#package");
+  console.log(packageSelect);
+  packageSelect.addEventListener("change", function() {
+    const packageName = document.querySelector(
+      ".summary-space:nth-of-type(3) p:first-of-type"
+    );
+
+    const packageSum = document.querySelector(
+      ".summary-space:nth-of-type(3) .price span"
+    );
+let newPackageSum=0;
+    switch (this.value) {
+      case "basic":
+        packageName.innerHTML = "Basic";
+        packageSum.innerText = "0";
+        newPackageSum= parseInt(packageSum.innerText);
+        break;
+      case "professional":
+          packageName.innerHTML = "Professional";
+          packageSum.innerText = "25";
+          newPackageSum= parseInt(packageSum.innerText);
+          break;
+      case "premium":
+          packageName.innerHTML = "Premium";
+          packageSum.innerText = "60";
+          newPackageSum= parseInt(packageSum.innerText);
+          break;
+
+    }
+  });
 });
