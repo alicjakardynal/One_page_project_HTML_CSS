@@ -69,15 +69,19 @@ document.addEventListener("DOMContentLoaded", function() {
       ".summary-space:nth-of-type(2) .price span"
     );
     const ordersNumber = parseInt(ordersSum.innerText);
-    const newOrdersSum = 0.5 * ordersInput;
+    const newOrdersSum = 0.25 * ordersInput;
     ordersSum.innerHTML = newOrdersSum;
 
 
   });
-
+const packageSelect=document.querySelector("#package");
+console.log(packageSelect);
+packageSelect.addEventListener("change",function(){
   const packageSum = document.querySelector(
     ".summary-space:nth-of-type(3) .price span"
   );
-  console.log(packageSum)
+})
+  
+  
 
 });
