@@ -820,7 +820,12 @@ padding: 8px;
     background-color: #08A6E4;
     width: 40%;
     margin-top: 10px;
+    
    
+}
+.total_price{
+    font-weight: 700;
+    font-size: 18px;
 }
 .total-space{
     display: flex;
