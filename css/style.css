@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 html,
 body {
     font-size: 10px;
@@ -598,7 +600,7 @@ form input {
 
 .input_personal {
     width: 20%;
-    padding: 0 10px;
+    padding: 0 12px;
 }
 
 input[type="checkbox"] {
@@ -643,13 +645,14 @@ span.font {
     display: inline;
     color: black;
     font-weight: 400;
+    width: 70%;
 }
 
 input[type="text"],
 input[type="email"] {
     border: none;
     border-bottom: 1px solid grey;
-    width: 250px;
+    width: 80%;
     height: 30px;
     display: inline-block;
     vertical-align: middle;
@@ -838,4 +841,78 @@ padding: 8px;
 
 .rental-space{
     display: none;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+    .container{
+        width: 100vw;
+    }
+
+    .pricing {
+        border-radius: 20px;
+        margin: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .pricing.basic {
+        border: 2px solid #EB476E;
+        height: 70%;
+    }
+    
+    .pricing.basic ul li:nth-of-type(-n+3)::before {
+        content: url(../assets/Ckechmark-1.svg);
+        padding: 10px;
+    }
+    
+    .pricing.basic ul li:nth-of-type(n+4)::before {
+        content: url(../assets/Close.svg);
+        padding: 10px;
+    }
+    
+    .pricing.professional {
+        border: 2px solid #07ACE6;
+        height: 100%;
+    }
+    
+    .pricing.professional p:first-of-type {
+        color: #07ACE6;
+    }
+    
+    .pricing.professional .btn {
+        background-color: #07ACE6
+    }
+    
+    .pricing.professional ul li:nth-of-type(-n+4)::before {
+        content: url(../assets/Ckechmark-1.svg);
+        padding: 10px;
+    }
+    
+    .pricing.professional ul li:nth-of-type(n+5)::before {
+        content: url(../assets/Close.svg);
+        padding: 10px;
+    }
+    
+    .pricing.premium {
+        border: 2px solid #55DFB4;
+        height: 350px;
+    }
+    
+    .pricing.premium p:first-of-type {
+        color: #55DFB4;
+    }
+    
+    .pricing.premium .btn {
+        background-color: #55DFB4;
+    }
+    
+    .pricing.premium li::before {
+        content: url(../assets/Ckechmark-1.svg);
+        padding: 10px;
+    }
+
 }
