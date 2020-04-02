@@ -842,8 +842,11 @@ padding: 8px;
 .rental-space{
     display: none;
 }
+.hamburger{
+    display: none;
+}
 
-@media screen and (min-width: 1000px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
     .container{
         width: 100vw;
     }
@@ -863,56 +866,107 @@ padding: 8px;
         border: 2px solid #EB476E;
         height: 70%;
     }
-    
-    .pricing.basic ul li:nth-of-type(-n+3)::before {
-        content: url(../assets/Ckechmark-1.svg);
-        padding: 10px;
-    }
-    
-    .pricing.basic ul li:nth-of-type(n+4)::before {
-        content: url(../assets/Close.svg);
-        padding: 10px;
-    }
+
     
     .pricing.professional {
         border: 2px solid #07ACE6;
         height: 100%;
     }
     
-    .pricing.professional p:first-of-type {
-        color: #07ACE6;
-    }
-    
-    .pricing.professional .btn {
-        background-color: #07ACE6
-    }
-    
-    .pricing.professional ul li:nth-of-type(-n+4)::before {
-        content: url(../assets/Ckechmark-1.svg);
-        padding: 10px;
-    }
-    
-    .pricing.professional ul li:nth-of-type(n+5)::before {
-        content: url(../assets/Close.svg);
-        padding: 10px;
-    }
     
     .pricing.premium {
         border: 2px solid #55DFB4;
         height: 350px;
     }
     
-    .pricing.premium p:first-of-type {
-        color: #55DFB4;
-    }
+
+    .fifth-section ul {
+        padding: 20px 0 40px 0;
+}
+.premium h3{
+    padding: 84px 100px 25px;
+}
+.premium p{
+    padding: 0px 20px 5px 20px;
+}
+.btn{
+    left: 25%;
+    bottom: -24px;
+}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+
+.container{
+    width:100vw;
+} 
+.fifth-section>div {
+    display: block;
+}
+.pricing{
+    margin: 55px;
+}
+.btn{
+    left:33%;
+}
+.sixth-section {
+    width: 77%;
+}
+.last_article {
+    padding: 50px 20px;
+}
+.combine.container h2 {
+    font-size: 2.6rem;
+}
+.combine.container p {
+    font-size: 1.4rem;
+    padding: 15px 10px;
+}
+
+
+.trumpet {
+    margin-left: 27px;
+    padding: 36px 0;
+}
+.last_article p::after {
+  
+    top: 266px;
+}
+.trumpet img {
     
-    .pricing.premium .btn {
-        background-color: #55DFB4;
-    }
+    width: 341px;
+}
+.articles_content:nth-child(2)::after {
     
-    .pricing.premium li::before {
-        content: url(../assets/Ckechmark-1.svg);
-        padding: 10px;
-    }
+    top: 234px;
+}
+.combine.container:nth-of-type(1) p::after {
+  
+    top: 234px;
+}
+}
+
+@media screen and  (max-width: 800px) {
+.hamburger{
+    display: inline-block;
+    padding: 25px;
+    cursor: pointer;
+    background-color: pink;
+    border: 0;
+    margin: 0;
 
 }
+.navigation{
+    display: none;
+}
+
+.first-section {
+    padding: 30px;
+
+
+}
+
+}
+
+
+
