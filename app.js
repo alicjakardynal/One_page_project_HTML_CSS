@@ -148,4 +148,25 @@ document.addEventListener("DOMContentLoaded", function() {
 sum();
 
   });
+
+  const navigation= document.querySelector(".navigation");
+  console.log(navigation)
+   const hamburger= document.querySelector(".hamburger");
+     hamburger.addEventListener("click",function(){
+if(navigation.style.display !== "block"){
+  navigation.style.display="block"
+}else{
+navigation.style.display="none"
+}
+     })
+   
+
+     const navlist=document.querySelectorAll("nav li");
+     console.log(navlist)
+     for (let i = 0; i < navlist.length; i++) {
+       navlist[i].addEventListener("click",function(){
+         navigation.style.display="none"
+       })
+       
+     }
 });
