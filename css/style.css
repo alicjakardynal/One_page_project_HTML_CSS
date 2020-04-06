@@ -955,7 +955,7 @@ padding: 8px;
     border: 0;
     margin: 0;
     position: absolute;
-    left:88%;
+    left:83%;
     width: 10%;
     
 
@@ -1091,7 +1091,116 @@ nav{
 .navigation li:hover::after {
     display: none;
 }
-@media screen and  (max-width: 600px) {}
+.personal{
+    width: 100%;
+}
+@media screen and  (max-width: 600px) {
+    .banner_btn {
+        
+        width: 60%;
+    }
+    .second-section>h1 {
+        font-size: 4rem;
+    }
+    .second-section p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .third_section>h2 {
+        
+        font-size: 3rem;
+    }
+    .combine.container{
+        padding: 20px 20px;
+    }
+    .combine.container p {
+        font-size: 1.4rem;
+        
+        width: 100%;
+    }
+    .combine.container h2 {
+        font-size: 3rem;
+    }
+    .article_img {
+        height: 141px;
+        width: 240px;
+    }
+    .combine.container:nth-of-type(1)::after {
+        right: 66px;
+        top: 263px;
+    }
+    .combine.container:nth-of-type(1)::after {
+       
+        height: 124px;
+        width: 124px;
+    }
+    .combine.container:nth-of-type(2)::before {
+        height: 200px;
+        width: 200px;
+        left: 25px;
+        top: 33px;
+    }
+    .last_article {
+        padding: 20px;
+    }
+    .trumpet img {
+        
+        left: -2%;
+    }
+    .trumpet img {
+        height: 195px;
+        
+    }
+    .pricing {
+        margin: 50px;
+        padding: 10px 10px 30px 10px;
+    }
+    .fifth-section ul {
+        padding: 10px 0 0 10px;
+    }
+    .calculator div{
+        display: block;
+    }
+    .inputs_section {
+        width: 100%;
+    }
+    .inputs_section input {
+        width: 80%;
+    }
+    #package {
+        
+        width: 80%;
+    }
+    input[type="checkbox"] {
+        width: 25px;
+    
+    }
+    .fa-arrow-circle-down {
+        left: -14%;
+    }
+    .summary{
+        width: 80%;
+    }
+    .sixth-section p{
+        display: block;
+    }
+    .sixth-section {
+        width: 70%;
+    }
+    .sixth-section h2 {
+        font-size: 4.3rem;
+        text-align: center;
+    }
+    .hamburger{
+        left: 83%;
+    }
+    .personal{
+        width: 100%;
+    }
+    .outline {
+        margin: 0
+    }
+}
 
 
 
