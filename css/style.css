@@ -162,7 +162,8 @@ body {
 .third_section>h2 {
     padding: 30px;
     font-size: 4rem;
-    font-style: 'Raleway'
+    font-style: 'Raleway';
+    text-align: center;
 }
 
 .third_section h3 {
@@ -945,28 +946,135 @@ padding: 8px;
     top: 234px;
 }
 }
-
-@media screen and  (max-width: 800px) {
+@media screen and (min-width: 600px)and  (max-width: 800px) {
 .hamburger{
     display: inline-block;
-    padding: 25px;
+    padding: 15px;
     cursor: pointer;
-    background-color: pink;
+   background-color: white;
+    
     border: 0;
     margin: 0;
+    position: relative
 
+}
+.fa-bars{
+    position: relative;
+    font-size: 3.5rem;
+    color: #08A6E4;
 }
 .navigation{
     display: none;
 }
 
 .first-section {
-    padding: 30px;
-
-
-}
+    padding: 20px;
 
 }
+.second-section{
+    padding-top: 105px;
+}
+.background{
+    background-position: center;
+    
+}
+
+.elements {
+    display: block;
+}
+.amounts.icon1::before {
+    left: 120px;
+}
+
+.amounts.icon3::before {
+    left: 120px;
+}
+.combine{
+    display: block;
+    width: 80%;
+    padding: 30px 80px;
+}
+.fourth{
+    display: block;
+}
+.articles_content:nth-child(2)::after {
+    display: none;
+}
+.combine.container:nth-of-type(1) p::after {
+    display: none;
+}
+.combine.container:nth-of-type(1)::after {
+    right: 182px;
+    top: 317px;
+}
+.combine.container:nth-of-type(2)::before {
+    content: " ";
+    height: 250px;
+    width: 250px;
+    left: 100px;
+    top: 90px;
+}
+.last_article p::after {
+    display: none;
+}
+
+.trumpet{
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.trumpet img {
+    position: relative;
+    left: 16%;
+    width: 320px;}
+
+.fifth-section>div {
+    display: block;
+    text-align: center;
+}
+
+.article_img {
+        height: 196px;
+        width: 327px;
+    position: relative;
+    margin-top: 50px;
+}
+.pricing {
+    border-radius: 20px;
+    padding: 20px 50px 50px 50px;
+    margin: 65px;
+}
+.summary {
+    padding: 40px 0px 40px 0px;
+}
+.inputs_section{
+    padding: 40px 0px 40px 0px;
+}
+.fa-arrow-circle-down {
+    
+    left: 84%;
+}
+.sixth-section {
+    
+     display: block;
+    }
+.form {
+       
+     width: 80%;
+    }
+input[type="text"], input[type="email"] {
+        
+        width: 100%;
+    }
+.lastbutton {
+    left: 13%;
+}
+footer {
+    padding: 20px ;
+}
+}
+@media screen and  (max-width: 600px) {}
 
 
 
