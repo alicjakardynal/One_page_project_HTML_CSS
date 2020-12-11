@@ -149,24 +149,47 @@ sum();
 
   });
 
+
+
   const navigation= document.querySelector(".navigation");
   console.log(navigation)
    const hamburger= document.querySelector(".hamburger");
      hamburger.addEventListener("click",function(){
-if(navigation.style.display !== "block"){
+
+  if(navigation.style.display !== "block"){
   navigation.style.display="block"
-}else{
-navigation.style.display="none"
-}
+  }else{
+  navigation.style.display="none"
+    }
      })
    
 
      const navlist=document.querySelectorAll("nav li");
      console.log(navlist)
-     for (let i = 0; i < navlist.length; i++) {
-       navlist[i].addEventListener("click",function(){
-         navigation.style.display="none"
+     
+     checkWidth();
+     window.addEventListener("resize",checkWidth);
+
+     function checkWidth(){
+      const windWidth=window.innerWidth;
+      if(windWidth<=800){
+         for (let i = 0; i < navlist.length; i++) {
+        navlist[i].addEventListener("click",function(){
+         navigation.style.display="none";
+         
        })
        
      }
+    } else {
+      navigation.style.display="block"
+     }
+     }
+    
+    
+    
+   
+     
+   
+
+     
 });
